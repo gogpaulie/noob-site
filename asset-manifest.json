@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/noob-site/static/css/main.cea4e33a.chunk.css",
+    "main.js": "/noob-site/static/js/main.10760946.chunk.js",
+    "main.js.map": "/noob-site/static/js/main.10760946.chunk.js.map",
+    "runtime-main.js": "/noob-site/static/js/runtime-main.227bc732.js",
+    "runtime-main.js.map": "/noob-site/static/js/runtime-main.227bc732.js.map",
+    "static/js/2.f2b2c109.chunk.js": "/noob-site/static/js/2.f2b2c109.chunk.js",
+    "static/js/2.f2b2c109.chunk.js.map": "/noob-site/static/js/2.f2b2c109.chunk.js.map",
+    "index.html": "/noob-site/index.html",
+    "static/css/main.cea4e33a.chunk.css.map": "/noob-site/static/css/main.cea4e33a.chunk.css.map",
+    "static/js/2.f2b2c109.chunk.js.LICENSE.txt": "/noob-site/static/js/2.f2b2c109.chunk.js.LICENSE.txt",
+    "static/media/video2.28326818.mp4": "/noob-site/static/media/video2.28326818.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.227bc732.js",
+    "static/js/2.f2b2c109.chunk.js",
+    "static/css/main.cea4e33a.chunk.css",
+    "static/js/main.10760946.chunk.js"
+  ]
+}
