@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import Navbar from './components/Navbar';
+import HeroVideo from './components/HeroVideo';
+import Work from './components/Work';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
+  const [scrollActive, setScrollActive] = useState(false);
+
+  function handleScroll() {
+    if (window.scrollY > 100) {
+      setScrollActive(true);
+    } else {
+      setScrollActive(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar scrollActive={scrollActive} />
+      <HeroVideo />
+      <Work id='work' />
+      <Contact />
     </div>
   );
 }

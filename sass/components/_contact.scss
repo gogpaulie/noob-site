@@ -1,0 +1,121 @@
+$ig-med-screen: 1200px !default;
+$ig-small-screen: 768px !default;
+$ig-xsmall-screen: 480px !default;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  padding: 2rem;
+
+  &__title {
+    padding-top: 5rem;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 4rem;
+  }
+  &__subtitle {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    @media (max-width: $ig-small-screen) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.contact-form {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+
+  @media (max-width: $ig-med-screen) {
+    width: 400px;
+  }
+  @media (max-width: $ig-xsmall-screen) {
+    width: 300px;
+  }
+
+  &__group {
+    margin-bottom: 2rem;
+    transition: all 0.3s;
+
+    &:focus-within {
+      transform: scale(1.1, 1.1);
+    }
+  }
+
+  &__label {
+    font-size: 1.75em;
+    padding: 5px 0;
+    color: white;
+    display: block;
+    opacity: 0;
+    transition: all 0.3s;
+    transform: translateX(-50px);
+  }
+
+  &__control {
+    box-shadow: none;
+    border-radius: 0;
+    border-color: #ccc;
+    border-style: none none solid none;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 2.25em;
+    transition: all 0.6s;
+    padding: 1rem 2.5rem;
+
+    &::placeholder {
+      color: #aaa;
+    }
+
+    &:focus {
+      box-shadow: none;
+      border-color: orange;
+      outline: none;
+    }
+    &:invalid:focus {
+      border-color: red;
+    }
+    &:valid:focus {
+      border-color: green;
+    }
+  }
+  &__btn {
+    background-color: $color-primary;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 3em;
+    padding: 10px 50px;
+    text-transform: uppercase;
+
+    &:hover {
+      filter: brightness(110%);
+      cursor: pointer;
+    }
+  }
+  &__alert {
+    font-size: 3rem;
+  }
+}
+
+.focus {
+  opacity: 1;
+  transform: translateX(0px);
+}
+textarea {
+  resize: none;
+}
+.sent {
+  background-color: $color-primary;
+  color: #fff;
+}
+
+.g-recaptcha {
+  margin: 0 auto 2rem auto;
+}

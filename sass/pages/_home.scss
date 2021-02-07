@@ -1,0 +1,72 @@
+.hero-video {
+  // background-color: rgba($color: #17077769, $alpha: 0.6);
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  line-height: 3rem;
+
+  &__title {
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+    & h1 {
+      color: white;
+      margin: 2rem 0;
+      font-size: 4rem;
+    }
+    & p {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}
+
+.Work {
+  color: black;
+
+  & h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 15rem;
+  }
+
+  &__card {
+    display: flex;
+    margin: 10rem 0;
+
+    &--video {
+      width: 500px;
+
+      & video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &--info {
+      flex: 1;
+      padding: 4rem;
+
+      & h3 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+      & ul {
+        list-style: circle;
+      }
+
+      & ul li {
+        font-size: 1.5rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}
